@@ -1,0 +1,153 @@
+body{
+    background-color: white;
+    color: white;
+}
+
+main{
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkgreen;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "doboz doboz o"
+    "c c c"
+    "f f f"
+    ;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    grid-area: h;
+}
+
+/* Doboz */
+.box{
+    padding: 10px;
+    grid-area: doboz;
+    position: relative;
+    height: 390px;
+    width: 700px;
+    border-radius: 10px;    
+    overflow: hidden;
+    
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    height: 400px;
+    width: 710px;
+    background-image: conic-gradient(black,white,black, white);
+    animation: rotate 12s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    height: 400px;
+    width: 710px;
+    background-image: conic-gradient(black,white,black,white);
+    animation: rotate 12s linear infinite;
+    animation-delay: -6s;
+}
+
+.box span{
+    padding: 10px;
+    position: absolute;
+    inset: 5px;
+    border-radius: 10px;
+    background-color: rgb(54, 253, 5);
+    z-index: 2;
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Oldalak */
+a{
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+ul{
+   text-decoration-line: none;
+}
+
+.menu:hover{
+    background-image: conic-gradient(lightgreen, lightblue);
+    animation:linear infinite;
+}
+.oldalak{
+    padding: 10px;
+    grid-area: o;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+.menu{
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* egyebek*/
+article{
+}
+
+aside{
+    padding: 10px;
+    background-color: blue;
+    margin: auto;
+    border-radius: 10px;
+    grid-area: c;
+}
+/*nevek*/
+
+footer{
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+    grid-area: f;
+}
+
+.Nevek{
+    
+    color: white;
+    padding-left:200px ;
+    padding-right: 200px;
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "doboz"
+        "o"
+        "c"
+        "f"
+        ;
+    }
+}
