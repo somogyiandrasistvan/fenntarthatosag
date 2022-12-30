@@ -1,83 +1,123 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="author" content="Somogyvári Márton">
-     <link rel="stylesheet" href="sytle.css">
-    <title>Somogyvári Márton oldala</title>
+/*kinézet*/
+body{
+    font-family: Arial;
+    background-image: url(/kepek/fu.jpeg);
+    background-repeat: repeat;
+    font-size: 17px;
+}
 
-</head>
-<body >
-    <main class="marcie">
-        <header>
-            <h2>MENTSD MEG A TENGERT!!!!!!!!</h2>
-        </header>
+.marcie{
+    background-image: url(/kepek/tenger2.jpg);
+    color: aqua;
+}
 
-        <nav class="oldalak">
-            <h1>Fenntarthatóság...</h1>
-                <ul>
-                    <li class="menu"><a href="index.html">Környezetbarát autók</a></li>
-                    <li class="menu"><a href="andras.html">Túlnépesedés</a></li>
-                    <li class="menu"><a href="marci.html">Mentsük meg a tengert </a></li>
-                </ul>
+.andrase{
 
-        </nav>
+}
 
-        <article>
-            <h2>A tengerről</h2>
-            <nav class="box">
-                <span>
-                    <h3>Mi is a tenger ?</h3>
+.timie{
 
-                    <p>A tenger egy nagy kiterjedésű sós víztömeg, mely lehet peremtenger melyet a vízáramlatok az óceánhoz kapcsolnak, beltenger mely csak vékony csatornákon érintkezik az óceánnal, vagy egy nagy sósvízű tó, valamelyik kontinens belsejében. A tengerek meghatározása nem egyértelmű, ezért több tenger  besorolása vitatott.
-                    Köznapi értelemben tengernek nevezik például az óceánt sós vize és beláthatatlan távolságai miatt, gyakran tenger nevet kapnak sós-, vagy édesvizű tavak is, és előfordul az is, hogy széles körben tengernek tekintett vizeket mások tónak tartanak. A Kaszpi-tengert például nevezik Kaszpi-tónak, az Aral-tavat Aral-tengernek is, a jóval kisebb Holt-tengert viszont nem szokták tónak nevezni. Egy édesvizű tó Kineret-tó néven is ismert. A tengerek jellegzetes illatát főként a vízinövények által nagy mennyiségben termelt dimetil-szulfonio-propionát baktériumok által történő lebontásakor bomlástermékként létrejövő dimetil-szulfid alkotja.</p>
+}
 
-                    <h3>Miért kell meg menteni a tengert ?</h3>
+main{
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkgreen; /*alapszíne a mainnek */
+    max-width: 1300px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "doboz doboz o"
+    "c c c"
+    "f f f"
+    ;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    grid-area: h;
+}
 
-                    <p>Azon kívül hogy az egészíti ki a világunknak több mint a 70%-át, az életet is neki köszönhetjük. A tengernek hála alakúlhattak ki a fák, állatok, az evolúcióban is sokat segített, mert ha csak bele gondolunk hogy míg a tengerbe van számtalan tengeri élőlény is, azon felül a földünketz is hűti.</p>
+/* Doboz */
+.box{
+    padding: 10px;
+    grid-area: doboz;
+    height: 700px;
+    width: 700px;
+    border-radius: 10px;    
+    background-image: url(/kepek/tenger.jpg);
+    
+}
 
-                    <h3>Mi történt a tengerrel ?</h3>
-                        <p>Sajnos az évek folyamán az ember teljesen beszennyezte a tengert, ami az ottani élőlényeknek is meg nekünk is rossz. Sokan esznek halat és sajnos amit bedobunk műanyagot a tengerbe az nem bomlik le, és még ki is pusztítja a vizi élő világot, mert sokszor van hogy ezek a vackok elszorítják az állatoknak a nyelő csövet, vagy az uszonyukat vagy bármelyik fontos testrészüket. Úgy hogy ha nem akarsz tahó lenni és elpusztítani a vizi élő világot, akkor ne szemetelj és ne dobjál semmit se a vízbe.</p>
-                </span>
+/* Oldalak */
+a{
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: none;
+}
 
-                    <p>Forrás: Wikipédia</p>
-                
-        </nav>
-        </article>
+a:hover{
+    color: rgb(229, 236, 229);
+    text-decoration: none;
+}
 
-               <br>
+.menu:hover{
+    background-image: conic-gradient(darkgreen, lightgreen, green);
+    animation:linear infinite;
+}
+.oldalak{
+    padding: 10px;
+    grid-area: o;
+    border-radius: 10px;
+    margin: auto;
+}
+.menu{
+    border-style:double;
+    border-radius: 15px;
+    border-color: green;
+    margin: 30px;
+    padding: 25px;
+    
+}
 
-        <aside>
-            <h2>Ennyit még te is megtehetsz hogy megmentsd a tengert:</h2>
-            <ul class="felsorolas">
-                <li> szelektíveld a szemetet</li>
-                <li> Használj kevesebb műanyagot</li>
-                <li> Ne önts bele semmi féle káros vegyszert vagy szert</li>
-            </lu>
-            
-            <br>
+/* egyebek*/
 
-            <h2>Ha kretén módon szeretnél segíteni:</h2>
-            <ul class="felsorolas">
-                <li> Hordjál mentsük meg a tengert feliratú pólót minden nap</li>
-                <li> Bazinagy táblát húrcolászva üvöltsd le az emberek fejét hogy mentsük meg a tengert</li>
-                <li> Járjál mindenhová rövid nadrágba és strandpapucsba</li>
-                <li> Ne vegyél műanyagot, vagy ha meg muszáj venned, akkor meg ÉGESD EL !!!!. Véletlenül se törődj vele hogy a szaga töbkre teszi a legző szerveidet csak ÉGESD EL !!!</li>
-            </lu>
-        </aside>
-            
-        <br>
 
-        <footer>
-            <h3>Készitették:</h3>
-            <ul class="Nevek">
-                <li>Somogyi András</li>
-                <li>Mohos Tímea</li>
-                <li>Somogyvári Márton</li>
-            </ul>
-        </footer>
-    </main>
-</body>
-</html>
+aside{
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    grid-area: c;
+}
+/*nevek*/
+
+footer{
+
+    border-radius: 10px;
+    margin: 5px;
+    grid-area: f;
+    padding: 5px;
+}
+ol, ul{
+    list-style: none;
+}
+.Nevek{
+    color: aqua;
+    padding-left:auto ;
+    padding-right: auto;
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "doboz"
+        "o"
+        "c"
+        "f"
+        ;
+    }
+}
