@@ -1,0 +1,124 @@
+/*kinézet*/
+body{
+    font-family: Arial;
+    background-image: url(/kepek/fu.jpeg);
+    background-repeat: repeat;
+    font-size: 17px;
+}
+
+.marcie{
+    background-image: url(/kepek/tenger2.jpg);
+    color: aqua;
+}
+
+.andras{
+    background-color: rgb(6, 6, 6);
+    color: white;
+}
+
+.timi{
+
+}
+
+main{
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    background-color: darkgreen; /*alapszíne a mainnek */
+    max-width: 1300px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "doboz doboz o"
+    "c c c"
+    "f f f"
+    ;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    grid-area: h;
+}
+
+/* Doboz */
+.box{
+    padding: 10px;
+    grid-area: doboz;
+    height: 700px;
+    width: 700px;
+    border-radius: 10px;    
+    background-image: url(/kepek/tenger.jpg);
+    
+}
+
+/* Oldalak */
+a{
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(229, 236, 229);
+    text-decoration: none;
+}
+
+.menu:hover{
+    background-image: conic-gradient(darkgreen, lightgreen, green);
+    animation:linear infinite;
+}
+.oldalak{
+    padding: 10px;
+    grid-area: o;
+    border-radius: 10px;
+    margin: auto;
+}
+.menu{
+    border-style:double;
+    border-radius: 15px;
+    border-color: green;
+    margin: 30px;
+    padding: 25px;
+    
+}
+
+/* egyebek*/
+
+
+aside{
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    grid-area: c;
+}
+/*nevek*/
+
+footer{
+
+    border-radius: 10px;
+    margin: 5px;
+    grid-area: f;
+    padding: 5px;
+}
+ol, ul{
+    list-style: none;
+}
+.Nevek{
+    color: aqua;
+    padding-left:auto ;
+    padding-right: auto;
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "doboz"
+        "o"
+        "c"
+        "f"
+        ;
+    }
+}
