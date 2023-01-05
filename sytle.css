@@ -1,0 +1,134 @@
+body{
+    font-family: Arial;
+    background-image: url(/kepek/fu.jpeg);
+    background-repeat: repeat;
+    font-size: 17px;
+}
+
+.marcie{
+    background-image: url(/kepek/tenger2.jpg);
+    color: aqua;
+}
+
+.andras{
+    background-color: rgb(6, 6, 6);
+    color: white;
+}
+main{
+    border-radius: 10px;
+    margin: auto;
+    background-color: darkgreen; 
+    max-width: 1500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a c"
+    "f f"
+    ;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    grid-area: h;
+}
+
+
+.box{
+    padding: 10px;
+    height: 700px;
+    width: 700px;
+    border-radius: 10px;    
+    background-image: url(/kepek/tenger.jpg);
+}
+
+
+a{
+    font-size: 20px;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(229, 236, 229);
+    text-decoration: none;
+}
+
+.menu:hover{
+    background-image: conic-gradient(darkgreen, lightgreen, green);
+    animation:linear infinite;
+}
+.oldalak{
+    padding: 10px;
+    grid-area: o;
+    border-radius: 10px;
+    margin: auto;
+}
+.menu{
+    border-style:double;
+    border-radius: 15px;
+    border-color: green;
+    margin: 30px;
+    padding: 25px;
+    
+}
+
+
+
+
+aside{
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    grid-area: c;
+}
+
+
+footer{
+
+    border-radius: 10px;
+    margin: 5px;
+    grid-area: f;
+    padding: 5px;
+}
+ol, ul{
+    list-style: none;
+}
+.Nevek{
+    color: aqua;
+}
+.Nevek2{
+    background-color: rgb(19, 19, 19);
+    text-align: right;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.cikk{
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(19, 19, 19);
+    border: solid 10px;
+    border-color: rgb(15, 15, 15);
+    border-radius: 10px;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: a;
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "doboz"
+        "o"
+        "c"
+        "f"
+        ;
+    }
+}
