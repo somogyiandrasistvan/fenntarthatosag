@@ -1,6 +1,6 @@
 body{
-    font-family: Arial;
-    background-image: url(/kepek/fu.jpeg);
+    font-family: monospace;
+    background-color: rgb(24, 24, 24);
     background-repeat: repeat;
     font-size: 17px;
 }
@@ -16,10 +16,11 @@ body{
 }
 main{
     border-radius: 10px;
+    border: solid 10px rgb(15, 15, 15);
     margin: auto;
-    background-color: darkgreen; 
     max-width: 1500px;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
     "h h"
     "n n"
@@ -32,16 +33,6 @@ header{
     margin: auto;
     grid-area: h;
 }
-
-
-.box{
-    padding: 10px;
-    height: 700px;
-    width: 700px;
-    border-radius: 10px;    
-    background-image: url(/kepek/tenger.jpg);
-}
-
 
 a{
     font-size: 20px;
@@ -56,7 +47,6 @@ a:hover{
 
 .menu:hover{
     background-image: conic-gradient(darkgreen, lightgreen, green);
-    animation:linear infinite;
 }
 .oldalak{
     padding: 10px;
@@ -65,16 +55,13 @@ a:hover{
     margin: auto;
 }
 .menu{
-    border-style:double;
+    border-style: solid;
     border-radius: 15px;
-    border-color: green;
+    border-color: rgb(15, 15, 15);
     margin: 30px;
     padding: 25px;
     
 }
-
-
-
 
 aside{
     padding: 10px;
@@ -85,11 +72,11 @@ aside{
 
 
 footer{
-
-    border-radius: 10px;
     margin: 5px;
     grid-area: f;
     padding: 5px;
+    margin: 0px;
+    border-top: solid 10px rgb(15, 15, 15);
 }
 ol, ul{
     list-style: none;
@@ -99,7 +86,7 @@ ol, ul{
 }
 .Nevek2{
     background-color: rgb(19, 19, 19);
-    text-align: right;
+    text-align: center;
     padding-bottom: 1px;
     padding-top: 1px;
 }
