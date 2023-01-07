@@ -14,22 +14,28 @@ body{
     background-color: rgb(6, 6, 6);
     color: white;
 }
+
 main{
+    margin: auto;
     border-radius: 10px;
     border: solid 10px rgb(15, 15, 15);
-    margin: auto;
     max-width: 1500px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 65% 35%;
     grid-template-areas: 
     "h h"
     "n n"
-    "a c"
+    "a as"
+    "t as"
     "f f"
     ;
 }
+
+p{
+    font-size: 10px;
+}
 header{
-    margin: auto;
+    text-align: center;
     grid-area: h;
 }
 
@@ -42,45 +48,96 @@ a{
     background-color: rgb(19, 19, 19);
 }
 
-li{
-    display: inline;
-}
-
 a:hover{
     color: white;
     text-decoration: none;
 }
 
-.menu:hover{
-}
-.oldalak{
-    padding: 10px;
-    grid-area: o;
-    border-radius: 10px;
-    margin: auto;
-}
 .menu{
     text-align: center;
-    
+    list-style-type: none;
+}
+
+nav{
+    grid-area: n;
 }
 
 aside{
-    padding: 10px;
-    margin: auto;
-    border-radius: 10px;
-    grid-area: c;
+    padding-left: 50px;
+    grid-area: as;
 }
 
+article{
+    margin-top: 20px;
+    padding-left: 50px;
+    grid-area: a;
+}
+#div1 {
+    padding-left: 15px;
+    width: auto;
+    height: auto;
+    background-color: rgb(19, 19, 19);
+    border: solid 10px;
+    border-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    position: relative;
+    animation: div1 2s alternate;
+}
+#div1 {animation-timing-function: ease;}
+@keyframes div1 {
+    from {left: -1200px;}
+    to {left: 0px;}
+}
+
+#div2 {
+    position: relative;
+    animation: div2 2s alternate;
+}
+  
+#div2 {animation-timing-function: ease;}
+@keyframes div2 {
+    from {right: -1000px;}
+    to {right: 0px;}
+}
+
+img{
+    margin-top: 20px;
+    border: solid 10px;
+    border-color: rgb(15, 15, 15);
+    border-radius: 10px;
+}
+
+table{
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    text-align: center;
+    grid-area: t;
+}
+td, th{
+    border: solid 5px;
+    border-color: rgb(15, 15, 15);
+}
+th{
+    border-top: solid 10px;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    border-color: rgb(15, 15, 15);
+}
+tbody{
+    border-right: solid 10px;
+    border-left: solid 10px;
+    border-bottom: solid 10px;
+    border-color: rgb(15, 15, 15);
+}
+li{
+    display: inline;
+}
 
 footer{
-    margin: 5px;
     grid-area: f;
-    padding: 5px;
-    margin: 0px;
     border-top: solid 10px rgb(15, 15, 15);
-}
-ol, ul{
-    list-style: none;
 }
 .Nevek{
     color: aqua;
@@ -88,56 +145,32 @@ ol, ul{
 .Nevek2{
     background-color: rgb(19, 19, 19);
     text-align: center;
-    padding-bottom: 1px;
-    padding-top: 1px;
-}
-nav{
-    grid-area: n;
-    margin-left: 50px;
-}
-article{
-    grid-area: a;
-}
-.cikk{
-    
-}
-div {
-    width: auto;
-    height: auto;
-    position: relative;
-    margin: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgb(19, 19, 19);
-    border: solid 10px;
-    border-color: rgb(15, 15, 15);
-    border-radius: 10px;
-    animation: mymove 2s alternate;
-}
-  
-#div1 {animation-timing-function: ease;}
-  
-@keyframes mymove {
-    from {left: -1000px;}
-    to {left: 0px;}
 }
 
-img{
-    border: solid 10px;
-    border-color: rgb(15, 15, 15);
-    border-radius: 10px;
-}
 
 @media only screen and (max-width:500px){
     main{
+        border: none;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "h"
-        "doboz"
-        "o"
-        "c"
+        "n"
+        "a"
+        "as"
+        "t"
         "f"
         ;
+    }
+    .andras{
+        background-color: rgb(24, 24, 24);
+    }
+
+    li{
+        display: block;
+        margin: 50px;
+    }
+    article{
+        padding: 0;
     }
 }
