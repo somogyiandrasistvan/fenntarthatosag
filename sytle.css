@@ -4,15 +4,25 @@ body{
     background-repeat: repeat;
     font-size: 17px;
 }
-.felsorolas{
 
+.amarci{
+    background-color: blue;
+    border-color: blue;
+    color: aqua;
 }
 .marcie2{
-    background-color: aqua;
+    background-image: url(kepek/tenger2.jpg);
+    border-color: blue;
+}
+.marcidiv1{
+    background-image: url(/kepek/bstone1.jpg);
+    border-color: blue;
 }
 .marcie{
-    background-image: url(/kepek/tenger2.jpg);
+    background-image: url(/kepek/whitebeard.jpg);
     color: aqua;
+    
+    text-shadow: 2px 2px black;
 }
 
 .andras{
@@ -24,7 +34,7 @@ main{
     margin: auto;
     padding: 15px;
     border-radius: 10px;
-    border: solid 10px rgb(15, 15, 15);
+    border: solid 10px ;
     max-width: 1500px;
     display: grid;
     grid-template-columns: 65% 35%;
@@ -48,7 +58,7 @@ a{
     font-size: 20px;
     color: firebrick;
     text-decoration: none;
-    background-color: rgb(19, 19, 19);
+    background-color: black;
 }
 
 a:hover{
@@ -82,7 +92,7 @@ article{
     height: auto;
     background-color: rgb(19, 19, 19);
     border: solid 10px;
-    border-color: rgb(15, 15, 15);
+
     border-radius: 10px;
     position: relative;
     animation: div1 2s alternate;
@@ -107,7 +117,6 @@ article{
 img{
     margin-top: 20px;
     border: solid 10px;
-    border-color: rgb(15, 15, 15);
     border-radius: 10px;
 }
 
@@ -144,7 +153,8 @@ footer{
     border-top: solid 10px rgb(15, 15, 15);
 }
 .Nevek{
-    color: aqua;
+    background-color: blue;
+    text-align: center;
 }
 .Nevek2{
     background-color: rgb(19, 19, 19);
