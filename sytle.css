@@ -4,7 +4,12 @@ body{
     background-repeat: repeat;
     font-size: 17px;
 }
+.felsorolas{
 
+}
+.marcie2{
+    background-color: aqua;
+}
 .marcie{
     background-image: url(/kepek/tenger2.jpg);
     color: aqua;
@@ -17,6 +22,7 @@ body{
 
 main{
     margin: auto;
+    padding: 15px;
     border-radius: 10px;
     border: solid 10px rgb(15, 15, 15);
     max-width: 1500px;
@@ -31,9 +37,6 @@ main{
     ;
 }
 
-p{
-    font-size: 10px;
-}
 header{
     text-align: center;
     grid-area: h;
@@ -56,6 +59,7 @@ a:hover{
 .menu{
     text-align: center;
     list-style-type: none;
+    display: inline;
 }
 
 nav{
@@ -131,12 +135,12 @@ tbody{
     border-bottom: solid 10px;
     border-color: rgb(15, 15, 15);
 }
-li{
-    display: inline;
-}
+
 
 footer{
     grid-area: f;
+    border-radius: 10px;
+    padding: 10px;
     border-top: solid 10px rgb(15, 15, 15);
 }
 .Nevek{
