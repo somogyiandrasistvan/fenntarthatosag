@@ -1,7 +1,6 @@
 body{
     font-family: monospace;
-    background-color: rgb(24, 24, 24);
-    background-repeat: repeat;
+    background-color: rgb(85, 170, 85);
     font-size: 17px;
 }
 
@@ -25,9 +24,9 @@ body{
 }
 
 .andras{
-    background-color: rgb(6, 6, 6);
+    background-color: rgb(0, 68, 0);
     color: white;
-    border-color: rgb(15, 15, 15);
+    border-color: rgb(17, 102, 17);
 }
 
 p{
@@ -56,12 +55,12 @@ header{
 }
 
 a{
-    border: 10px solid rgb(15, 15, 15);
+    border: 10px solid rgb(17, 102, 17);
     border-radius: 10px;
     font-size: 20px;
-    color: firebrick;
+    color: chartreuse;
     text-decoration: none;
-    background-color: black;
+    background-color: rgb(0, 68, 0);
 }
 
 a:hover{
@@ -75,7 +74,7 @@ a:hover{
     display: inline;
 }
 
-nav{
+section{
     grid-area: n;
 }
 
@@ -99,7 +98,7 @@ article{
     padding: 15px;
     width: auto;
     height: auto;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(45, 136, 45);
     border: solid 10px;
 
     border-radius: 10px;
@@ -139,19 +138,19 @@ table{
 }
 td, th{
     border: solid 5px;
-    border-color: rgb(15, 15, 15);
+    border-color: rgb(17, 102, 17);
 }
 th{
     border-top: solid 10px;
     border-left: solid 10px;
     border-right: solid 10px;
-    border-color: rgb(15, 15, 15);
+    border-color: rgb(17, 102, 17);
 }
 tbody{
     border-right: solid 10px;
     border-left: solid 10px;
     border-bottom: solid 10px;
-    border-color: rgb(15, 15, 15);
+    border-color: rgb(17, 102, 17);
 }
 
 
@@ -165,10 +164,10 @@ footer{
     border-top: solid 10px blue
 }
 .Nevek2{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 68, 0);
     text-align: center;
     margin: -15px;
-    border-top: solid 10px rgb(15, 15, 15);
+    border-top: solid 10px rgb(17, 102, 17);
 }
 
 
