@@ -1,6 +1,6 @@
 body{
     font-family: monospace;
-    background-color: rgb(85, 170, 85);
+    background-image:conic-gradient(rgb(85, 170, 85), aqua, gray);
     font-size: 17px;
 }
 
@@ -8,6 +8,13 @@ body{
     background-color: blue;
     border-color: blue;
     color: aqua;
+}
+.amarci2{
+    border: none;
+    background-image: url(/kepek/tenger2.jpg);
+    margin: 5px;
+    padding: 5px;
+    color: blue;
 }
 .marcie2{
     background-image: url(kepek/tenger2.jpg);
@@ -19,8 +26,6 @@ body{
 }
 .marcie{
     background-image: url(/kepek/whitebeard.jpg);
-    color: aqua;
-    text-shadow: 2px 2px black;
 }
 
 .andras{
